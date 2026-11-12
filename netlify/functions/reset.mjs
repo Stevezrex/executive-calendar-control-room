@@ -1,0 +1,5 @@
+import { handleReset } from '../lib/attempts.mjs';
+import { run, store } from '../lib/http.mjs';
+
+export default async (req) => run(req, (body) => handleReset(store(), body));
+export const config = { path: '/api/reset' };

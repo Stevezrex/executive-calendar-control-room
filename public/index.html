@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Executive Calendar Control Room</title>
+  <meta name="description" content="A simulated week in the calendar of a chief executive. Book, reschedule, repair a conflict and apply a policy.">
+  <meta name="theme-color" content="#15204B">
+  <link rel="preload" href="fonts/SourceSans3.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SourceSerif4.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Lets Netlify detect the form. The score rows are posted by the submit function. -->
+  <form name="calendar-test" data-netlify="true" hidden>
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <input type="text" name="score">
+  </form>
+
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="app"></div>
+  <div id="modal"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="nojs">This simulation needs JavaScript. Turn it on and reload the page.</p></noscript>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
